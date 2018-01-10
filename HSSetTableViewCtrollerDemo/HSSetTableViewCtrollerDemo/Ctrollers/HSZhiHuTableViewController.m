@@ -23,7 +23,7 @@
     
 //    //内置音效
     HSZhiHuCustomCellModel *sound = [[HSZhiHuCustomCellModel alloc] initWithCellIdentifier:@"HSZhiHuCustomTableViewCell" actionBlock:nil];
-    sound.cellHeight = 60;
+    sound.cellHeight = 120;
     sound.text = @"内置音效";
     sound.detailText = @"应用内按钮点击音效";
     sound.hideSwitch = NO;
@@ -60,17 +60,20 @@
     
     //空间清理
     HSTitleCellModel *help = [[HSTitleCellModel alloc] initWithTitle:@"知乎实验室" actionBlock:nil];
+    
     //关于QQ与帮助
     HSTitleCellModel *about = [[HSTitleCellModel alloc] initWithTitle:@"退出我的账号" actionBlock:nil];
     about.showArrow = NO;
     about.titleColor = [UIColor redColor];
     about.titileTextAlignment = NSTextAlignmentCenter;
-    
+        
     NSMutableArray *section = [NSMutableArray arrayWithObjects:sound,noIcon,titleFont,nil];
     NSMutableArray *section1 = [NSMutableArray arrayWithObjects:msg, record,nil];
     NSMutableArray *section2 = [NSMutableArray arrayWithObjects:clean,nil];
     NSMutableArray *section3 = [NSMutableArray arrayWithObjects:security, privacy,help,nil];
     NSMutableArray *section4 = [NSMutableArray arrayWithObjects:about,nil];
+    
+
     [self.hs_dataArry addObject:section];
     [self.hs_dataArry addObject:section1];
     [self.hs_dataArry addObject:section2];

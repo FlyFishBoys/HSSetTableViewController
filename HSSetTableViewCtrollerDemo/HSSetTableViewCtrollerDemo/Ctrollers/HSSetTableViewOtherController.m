@@ -50,6 +50,7 @@
         [weakSelf updateCellModel:detailModel];
         update = !update;
     }];
+    cell2.titileTextAlignment = NSTextAlignmentNatural;
     cell2.arrowWidth = 30;
     cell2.arrowHeight = 20;
     cell2.arrowImage = [UIImage imageNamed:@"MoreMyBankCard"];
@@ -75,7 +76,6 @@
     cell4.showArrow = YES;
    // cell4.arrowControlRightOffset = 15;
     self.cell4 = cell4;
-    
     
 
     

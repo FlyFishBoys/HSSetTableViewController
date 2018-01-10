@@ -23,7 +23,6 @@
     
     [self initSetTableViewConfigureStyle:UITableViewStylePlain];
     
-    
     //头像
     UIImage *icon = [UIImage imageNamed:@"ic_icon_header"];
     HSImageCellModel *header = [[HSImageCellModel alloc] initWithTitle:@"头像" placeholderImage:icon imageUrl:nil actionBlock:^(HSBaseCellModel *model) {
@@ -36,8 +35,6 @@
     HSTextCellModel *name = [[HSTextCellModel alloc] initWithTitle:@"名字" detailText:@"人名的名义" actionBlock:^(HSBaseCellModel *model) {
         
     }];
-    
-    
     
     //微信号
     HSTextCellModel *number = [[HSTextCellModel alloc] initWithTitle:@"微信号" detailText:@"HSSetTableView" actionBlock:^(HSBaseCellModel *model) {
@@ -78,6 +75,8 @@
     [self.hs_dataArry addObject:section0];
     [self.hs_dataArry addObject:section1];
     [self.hs_tableView reloadData];
+    
+    self.hs_tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {
