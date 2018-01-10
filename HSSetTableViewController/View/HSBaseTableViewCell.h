@@ -11,8 +11,6 @@
 @interface HSBaseTableViewCell : UITableViewCell
 
 @property (nonatomic, strong)HSBaseCellModel *cellModel;  ///<cellModel
-@property (nonatomic, weak)CALayer *topLine;  ///<顶部分割线
-@property (nonatomic, weak)CALayer *bottomLine;  ///<底部分割线
 
 //cell初始化方法
 + (HSBaseTableViewCell *)cellWithIdentifier:(NSString *)cellIdentifier tableView:(UITableView *)tableView;

@@ -106,8 +106,6 @@
     NSAssert([class isSubclassOfClass:[HSBaseTableViewCell class]], @"此cellclass类别必须存在,并且继承HSBaseTableViewCell");
     HSBaseTableViewCell *cell = [class cellWithIdentifier:cellModel.cellClass tableView:tableView];
     [cell setupDataModel:cellModel];
-    cell.topLine.hidden = indexPath.row != 0;
-    [cell.bottomLine setHs_x:(indexPath.row == sections.count - 1 ? 0:cellModel.separateOffset)];
     //处理分割线
     return cell;
 }
@@ -136,6 +134,21 @@
 
 
 - (CGFloat)systemFittingHeightForConfiguratedCell:(UITableViewCell *)cell withTalbView:(UITableView*)tableView {
+    
+    //判断cell.contentView 是否使用自动布局
+    BOOL isAutoLayout = cell.contentView.constraints.count >0 ?YES:NO;
+    //非自动布局，根据frame 获取最大height
+    NSMutableArray * heightArr = [NSMutableArray array];
+    if (isAutoLayout==NO) {
+        for (UIView * sub in cell.contentView.subviews) {
+            NSLog(@"%@ --frame: %@",NSStringFromClass([sub class]),NSStringFromCGRect(sub.frame));
+            CGFloat height = sub.frame.size.height + sub.frame.origin.y;
+            [heightArr addObject:@(height)];
+            
+        }
+        CGFloat maxHeight = [[heightArr valueForKeyPath:@"@max.floatValue"] floatValue];
+        return maxHeight + 15;
+    }
     
     CGFloat contentViewWidth = CGRectGetWidth(tableView.frame);
     

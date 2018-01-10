@@ -53,8 +53,6 @@
     NSAssert([class isSubclassOfClass:[HSBaseTableViewCell class]], @"此cellclass类别必须存在,并且继承HSBaseTableViewCell");
     HSBaseTableViewCell *cell = [class cellWithIdentifier:cellModel.cellClass tableView:tableView];
     [cell setupDataModel:cellModel];
-    cell.topLine.hidden = indexPath.row != 0;
-    [cell.bottomLine setHs_x:(indexPath.row == sections.count - 1 ? 0:cellModel.separateOffset)];
     //处理分割线
     return cell;
 }

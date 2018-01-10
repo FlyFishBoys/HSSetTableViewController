@@ -43,20 +43,7 @@
 
 - (void)setupUI
 {
-    //添加顶部分割线
-    CALayer *topLine = [CALayer layer];
-    [topLine setFrame:CGRectMake(0, 0, self.frame.size.width, HS_KSeparateHeight)];
-    [topLine setBackgroundColor:HS_KSeparateColor.CGColor];
-    [self.contentView.layer addSublayer:topLine];
-    self.topLine = topLine;
-    
-    //添加底部分割线
-    CALayer *bottomLine = [CALayer layer];
-    [bottomLine setFrame:CGRectMake(0, 0, self.frame.size.width, HS_KSeparateHeight)];
-    [bottomLine setBackgroundColor:HS_KSeparateColor.CGColor];
-    [self.contentView.layer addSublayer:bottomLine];
-    self.bottomLine = bottomLine;
-    
+   
    
 }
 
@@ -64,19 +51,12 @@
 {
     self.cellModel = model;
     self.selectionStyle = model.selectionStyle;
-    [self.bottomLine setHs_y:model.cellHeight - model.separateHeight];
-    [self.bottomLine setHs_height:model.separateHeight];
-    [self.topLine setHs_height:model.separateHeight];
-    [self.bottomLine setBackgroundColor:model.separateColor.CGColor];
-    [self.topLine setBackgroundColor:model.separateColor.CGColor];
 }
 
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    [self.bottomLine setHs_width:self.frame.size.width];
-    [self.topLine setHs_width:self.frame.size.width];
 }
 
 
