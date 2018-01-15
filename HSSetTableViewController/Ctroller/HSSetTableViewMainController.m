@@ -9,6 +9,7 @@
 #import "HSSetTableViewMainController.h"
 #import "HSBaseTableViewCell.h"
 #import "HSBaseCellModel.h"
+#import "HSTitleCellModel.h"
 #import "NSArray+HSSafeAccess.h"
 #import "UIView+HSFrame.h"
 #import "HSSetTableViewControllerConst.h"
@@ -27,7 +28,6 @@
     tableView.backgroundColor = [UIColor clearColor];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.showsVerticalScrollIndicator = NO;
     
     if(floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_8_x_Max){
@@ -124,7 +124,7 @@
         
         [cell prepareForReuse];
         
-        CGFloat height = [self systemFittingHeightForConfiguratedCell:cell withTalbView:tableView];
+        CGFloat height = [self systemFittingHeightForConfiguratedCell:cell withTalbView:tableView cellModel:cellModel];
         
         return height;
     }
@@ -133,7 +133,13 @@
 }
 
 
-- (CGFloat)systemFittingHeightForConfiguratedCell:(UITableViewCell *)cell withTalbView:(UITableView*)tableView {
+- (CGFloat)systemFittingHeightForConfiguratedCell:(UITableViewCell *)cell withTalbView:(UITableView*)tableView cellModel:(HSBaseCellModel*)cellModel {
+    
+    HSTitleCellModel  * titleCellModel;
+    
+    if ([cellModel isKindOfClass:[HSTitleCellModel class]]) {
+        titleCellModel = (HSTitleCellModel*)cellModel;
+    }
     
     //判断cell.contentView 是否使用自动布局
     BOOL isAutoLayout = cell.contentView.constraints.count >0 ?YES:NO;
@@ -189,6 +195,11 @@
     
     if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
         fittingHeight += 1.0 / [UIScreen mainScreen].scale;
+    }
+    
+    if (fittingHeight < titleCellModel.titleFont.pointSize +18*2) {
+        
+        fittingHeight = titleCellModel.titleFont.pointSize +18*2;
     }
     
     return fittingHeight;

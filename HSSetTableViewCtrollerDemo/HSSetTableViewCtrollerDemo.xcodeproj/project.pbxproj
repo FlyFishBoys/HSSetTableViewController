@@ -7,76 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B07CCC71EB18CE600CB0ADE /* HSSetTableViewMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCC61EB18CE600CB0ADE /* HSSetTableViewMeController.m */; };
-		3B07CCCA1EB18D1000CB0ADE /* HSSetTableInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCC91EB18D1000CB0ADE /* HSSetTableInfoController.m */; };
-		3B07CCCD1EB18D3800CB0ADE /* HSSetTableViewOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCCC1EB18D3800CB0ADE /* HSSetTableViewOtherController.m */; };
-		3B07CCF11EB1A21300CB0ADE /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD11EB1A21300CB0ADE /* MKAnnotationView+WebCache.m */; };
-		3B07CCF21EB1A21300CB0ADE /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD31EB1A21300CB0ADE /* NSData+ImageContentType.m */; };
-		3B07CCF31EB1A21300CB0ADE /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD51EB1A21300CB0ADE /* SDImageCache.m */; };
-		3B07CCF41EB1A21300CB0ADE /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD71EB1A21300CB0ADE /* SDWebImageCompat.m */; };
-		3B07CCF51EB1A21300CB0ADE /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD91EB1A21300CB0ADE /* SDWebImageDecoder.m */; };
-		3B07CCF61EB1A21300CB0ADE /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCDB1EB1A21300CB0ADE /* SDWebImageDownloader.m */; };
-		3B07CCF71EB1A21300CB0ADE /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCDD1EB1A21300CB0ADE /* SDWebImageDownloaderOperation.m */; };
-		3B07CCF81EB1A21300CB0ADE /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCDF1EB1A21300CB0ADE /* SDWebImageManager.m */; };
-		3B07CCF91EB1A21300CB0ADE /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE21EB1A21300CB0ADE /* SDWebImagePrefetcher.m */; };
-		3B07CCFA1EB1A21300CB0ADE /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE41EB1A21300CB0ADE /* UIButton+WebCache.m */; };
-		3B07CCFB1EB1A21300CB0ADE /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE61EB1A21300CB0ADE /* UIImage+GIF.m */; };
-		3B07CCFC1EB1A21300CB0ADE /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE81EB1A21300CB0ADE /* UIImage+MultiFormat.m */; };
-		3B07CCFD1EB1A21300CB0ADE /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCEA1EB1A21300CB0ADE /* UIImage+WebP.m */; };
-		3B07CCFE1EB1A21300CB0ADE /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCEC1EB1A21300CB0ADE /* UIImageView+HighlightedWebCache.m */; };
-		3B07CCFF1EB1A21300CB0ADE /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCEE1EB1A21300CB0ADE /* UIImageView+WebCache.m */; };
-		3B07CD001EB1A21300CB0ADE /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCF01EB1A21300CB0ADE /* UIView+WebCacheOperation.m */; };
-		3B571E8E1F25C3EC0092E1F4 /* HSCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B571E8D1F25C3EC0092E1F4 /* HSCategoryViewController.m */; };
-		3B571E9E1F25EFB50092E1F4 /* HSSetTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B571E9D1F25EFB50092E1F4 /* HSSetTableViewManager.m */; };
-		3B571EA11F25EFCF0092E1F4 /* UIViewController+HSSetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B571EA01F25EFCF0092E1F4 /* UIViewController+HSSetTableView.m */; };
-		3B719B8D1ED3C5FD00DB0BE9 /* HSSetTableViewCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B719B8C1ED3C5FD00DB0BE9 /* HSSetTableViewCustomController.m */; };
-		3B887ADF1FA038DF000D2646 /* HSHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B887ADE1FA038DF000D2646 /* HSHeaderModel.m */; };
-		3B887AE21FA0396A000D2646 /* HSFooterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B887AE11FA0396A000D2646 /* HSFooterModel.m */; };
-		3BB3C4A31EAB991D004A9BA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4A21EAB991D004A9BA9 /* main.m */; };
-		3BB3C4A61EAB991D004A9BA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4A51EAB991D004A9BA9 /* AppDelegate.m */; };
-		3BB3C4A91EAB991D004A9BA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4A81EAB991D004A9BA9 /* ViewController.m */; };
 		3BB3C4AC1EAB991D004A9BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB3C4AA1EAB991D004A9BA9 /* Main.storyboard */; };
 		3BB3C4AE1EAB991D004A9BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB3C4AD1EAB991D004A9BA9 /* Assets.xcassets */; };
 		3BB3C4B11EAB991D004A9BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB3C4AF1EAB991D004A9BA9 /* LaunchScreen.storyboard */; };
 		3BB3C4BC1EAB991D004A9BA9 /* HSSetTableViewCtrollerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4BB1EAB991D004A9BA9 /* HSSetTableViewCtrollerDemoTests.m */; };
 		3BB3C4C71EAB991D004A9BA9 /* HSSetTableViewCtrollerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4C61EAB991D004A9BA9 /* HSSetTableViewCtrollerDemoUITests.m */; };
-		3BF5778B1EC01AD1006E3814 /* HSSetTableViewQQController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5778A1EC01AD1006E3814 /* HSSetTableViewQQController.m */; };
-		3BFD665D1EB1DD050001E324 /* NSArray+HSSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD663B1EB1DD050001E324 /* NSArray+HSSafeAccess.m */; };
-		3BFD665E1EB1DD050001E324 /* NSBundle+HSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD663D1EB1DD050001E324 /* NSBundle+HSImage.m */; };
-		3BFD665F1EB1DD050001E324 /* NSString+HSHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD663F1EB1DD050001E324 /* NSString+HSHeight.m */; };
-		3BFD66601EB1DD050001E324 /* UIColor+HSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66411EB1DD050001E324 /* UIColor+HSExtension.m */; };
-		3BFD66611EB1DD050001E324 /* UIView+HSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66431EB1DD050001E324 /* UIView+HSFrame.m */; };
-		3BFD66621EB1DD050001E324 /* HSSetTableViewMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66461EB1DD050001E324 /* HSSetTableViewMainController.m */; };
 		3BFD66631EB1DD050001E324 /* HSSetTableViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD66471EB1DD050001E324 /* HSSetTableViewController.bundle */; };
-		3BFD66641EB1DD050001E324 /* HSSetTableViewControllerConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66491EB1DD050001E324 /* HSSetTableViewControllerConst.m */; };
-		3BFD66651EB1DD050001E324 /* HSBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD664D1EB1DD050001E324 /* HSBaseCellModel.m */; };
-		3BFD66661EB1DD050001E324 /* HSImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD664F1EB1DD050001E324 /* HSImageCellModel.m */; };
-		3BFD66671EB1DD050001E324 /* HSSwitchCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66511EB1DD050001E324 /* HSSwitchCellModel.m */; };
-		3BFD66681EB1DD050001E324 /* HSTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66531EB1DD050001E324 /* HSTextCellModel.m */; };
-		3BFD66691EB1DD050001E324 /* HSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66561EB1DD050001E324 /* HSBaseTableViewCell.m */; };
-		3BFD666A1EB1DD050001E324 /* HSImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66581EB1DD050001E324 /* HSImageTableViewCell.m */; };
-		3BFD666B1EB1DD050001E324 /* HSSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD665A1EB1DD050001E324 /* HSSwitchTableViewCell.m */; };
-		3BFD666C1EB1DD050001E324 /* HSTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD665C1EB1DD050001E324 /* HSTextTableViewCell.m */; };
-		3BFF33181EEA9F2A00299CEB /* HSTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33171EEA9F2A00299CEB /* HSTitleTableViewCell.m */; };
-		3BFF331B1EEAA24000299CEB /* HSTitleCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF331A1EEAA24000299CEB /* HSTitleCellModel.m */; };
-		3BFF331E1EEAB77200299CEB /* HSCustomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF331D1EEAB77200299CEB /* HSCustomCellModel.m */; };
-		3BFF33211EEABB9C00299CEB /* HSCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33201EEABB9C00299CEB /* HSCustomTableViewCell.m */; };
-		3BFF33251EEABD5300299CEB /* HSHeaderCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33241EEABD5300299CEB /* HSHeaderCellModel.m */; };
-		3BFF33281EEABD8E00299CEB /* HSHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33271EEABD8E00299CEB /* HSHeaderTableViewCell.m */; };
-		3BFF332B1EEADCFA00299CEB /* HSZhiHuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF332A1EEADCFA00299CEB /* HSZhiHuTableViewController.m */; };
-		3BFF33341EEAE39900299CEB /* HSZhiHuCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33331EEAE39900299CEB /* HSZhiHuCustomTableViewCell.m */; };
-		3BFF33371EEAE3C200299CEB /* HSZhiHuCustomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33361EEAE3C200299CEB /* HSZhiHuCustomCellModel.m */; };
+		534CA154200C4B2A00A409A7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6365FE2005D5BD003A2426 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		534CA155200C4B2A00A409A7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366072005D5BD003A2426 /* ViewController+MASAdditions.m */; };
+		534CA156200C4B2A00A409A7 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660B2005D5BD003A2426 /* MASCompositeConstraint.m */; };
+		534CA157200C4B2A00A409A7 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660C2005D5BD003A2426 /* MASConstraintMaker.m */; };
+		534CA158200C4B2A00A409A7 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660D2005D5BD003A2426 /* MASLayoutConstraint.m */; };
+		534CA159200C4B2A00A409A7 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660E2005D5BD003A2426 /* NSArray+MASAdditions.m */; };
+		534CA15A200C4B2A00A409A7 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660F2005D5BD003A2426 /* View+MASAdditions.m */; };
+		534CA15B200C4B2A00A409A7 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366122005D5BD003A2426 /* MASConstraint.m */; };
+		534CA15C200C4B2A00A409A7 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366142005D5BD003A2426 /* MASViewConstraint.m */; };
+		534CA15D200C4B2A00A409A7 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366152005D5BD003A2426 /* MASViewAttribute.m */; };
+		534CA15E200C4B2A00A409A7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FF6366162005D5BD003A2426 /* README.md */; };
+		534CA15F200C4B2A00A409A7 /* HSSetTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B571E9D1F25EFB50092E1F4 /* HSSetTableViewManager.m */; };
+		534CA160200C4B2A00A409A7 /* UIViewController+HSSetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B571EA01F25EFCF0092E1F4 /* UIViewController+HSSetTableView.m */; };
+		534CA161200C4B2A00A409A7 /* NSArray+HSSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD663B1EB1DD050001E324 /* NSArray+HSSafeAccess.m */; };
+		534CA162200C4B2A00A409A7 /* NSBundle+HSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD663D1EB1DD050001E324 /* NSBundle+HSImage.m */; };
+		534CA163200C4B2A00A409A7 /* NSString+HSHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD663F1EB1DD050001E324 /* NSString+HSHeight.m */; };
+		534CA164200C4B2A00A409A7 /* UIColor+HSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66411EB1DD050001E324 /* UIColor+HSExtension.m */; };
+		534CA165200C4B2A00A409A7 /* UIView+HSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66431EB1DD050001E324 /* UIView+HSFrame.m */; };
+		534CA166200C4B2A00A409A7 /* HSSetTableViewMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66461EB1DD050001E324 /* HSSetTableViewMainController.m */; };
+		534CA167200C4B2A00A409A7 /* HSSetTableViewControllerConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66491EB1DD050001E324 /* HSSetTableViewControllerConst.m */; };
+		534CA168200C4B2A00A409A7 /* HSBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD664D1EB1DD050001E324 /* HSBaseCellModel.m */; };
+		534CA169200C4B2A00A409A7 /* HSImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD664F1EB1DD050001E324 /* HSImageCellModel.m */; };
+		534CA16A200C4B2A00A409A7 /* HSSwitchCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66511EB1DD050001E324 /* HSSwitchCellModel.m */; };
+		534CA16B200C4B2A00A409A7 /* HSTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66531EB1DD050001E324 /* HSTextCellModel.m */; };
+		534CA16C200C4B2A00A409A7 /* HSTitleCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF331A1EEAA24000299CEB /* HSTitleCellModel.m */; };
+		534CA16D200C4B2A00A409A7 /* HSCustomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF331D1EEAB77200299CEB /* HSCustomCellModel.m */; };
+		534CA16E200C4B2A00A409A7 /* HSHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B887ADE1FA038DF000D2646 /* HSHeaderModel.m */; };
+		534CA16F200C4B2A00A409A7 /* HSFooterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B887AE11FA0396A000D2646 /* HSFooterModel.m */; };
+		534CA170200C4B2A00A409A7 /* HSTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33171EEA9F2A00299CEB /* HSTitleTableViewCell.m */; };
+		534CA171200C4B2A00A409A7 /* HSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66561EB1DD050001E324 /* HSBaseTableViewCell.m */; };
+		534CA172200C4B2A00A409A7 /* HSImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD66581EB1DD050001E324 /* HSImageTableViewCell.m */; };
+		534CA173200C4B2A00A409A7 /* HSSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD665A1EB1DD050001E324 /* HSSwitchTableViewCell.m */; };
+		534CA174200C4B2A00A409A7 /* HSTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD665C1EB1DD050001E324 /* HSTextTableViewCell.m */; };
+		534CA175200C4B2A00A409A7 /* HSCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33201EEABB9C00299CEB /* HSCustomTableViewCell.m */; };
+		534CA176200C4B2A00A409A7 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD11EB1A21300CB0ADE /* MKAnnotationView+WebCache.m */; };
+		534CA177200C4B2A00A409A7 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD31EB1A21300CB0ADE /* NSData+ImageContentType.m */; };
+		534CA178200C4B2A00A409A7 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD51EB1A21300CB0ADE /* SDImageCache.m */; };
+		534CA179200C4B2A00A409A7 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD71EB1A21300CB0ADE /* SDWebImageCompat.m */; };
+		534CA17A200C4B2A00A409A7 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCD91EB1A21300CB0ADE /* SDWebImageDecoder.m */; };
+		534CA17B200C4B2A00A409A7 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCDB1EB1A21300CB0ADE /* SDWebImageDownloader.m */; };
+		534CA17C200C4B2A00A409A7 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCDD1EB1A21300CB0ADE /* SDWebImageDownloaderOperation.m */; };
+		534CA17D200C4B2A00A409A7 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCDF1EB1A21300CB0ADE /* SDWebImageManager.m */; };
+		534CA17E200C4B2A00A409A7 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE21EB1A21300CB0ADE /* SDWebImagePrefetcher.m */; };
+		534CA17F200C4B2A00A409A7 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE41EB1A21300CB0ADE /* UIButton+WebCache.m */; };
+		534CA180200C4B2A00A409A7 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE61EB1A21300CB0ADE /* UIImage+GIF.m */; };
+		534CA181200C4B2A00A409A7 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCE81EB1A21300CB0ADE /* UIImage+MultiFormat.m */; };
+		534CA182200C4B2A00A409A7 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCEA1EB1A21300CB0ADE /* UIImage+WebP.m */; };
+		534CA183200C4B2A00A409A7 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCEC1EB1A21300CB0ADE /* UIImageView+HighlightedWebCache.m */; };
+		534CA184200C4B2A00A409A7 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCEE1EB1A21300CB0ADE /* UIImageView+WebCache.m */; };
+		534CA185200C4B2A00A409A7 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCF01EB1A21300CB0ADE /* UIView+WebCacheOperation.m */; };
+		534CA186200C4B2A00A409A7 /* HSHeaderCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33241EEABD5300299CEB /* HSHeaderCellModel.m */; };
+		534CA187200C4B2A00A409A7 /* HSHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33271EEABD8E00299CEB /* HSHeaderTableViewCell.m */; };
+		534CA188200C4B2A00A409A7 /* HSZhiHuCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33331EEAE39900299CEB /* HSZhiHuCustomTableViewCell.m */; };
+		534CA189200C4B2A00A409A7 /* HSZhiHuCustomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF33361EEAE3C200299CEB /* HSZhiHuCustomCellModel.m */; };
+		534CA18A200C4B2A00A409A7 /* HSSetTableViewMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCC61EB18CE600CB0ADE /* HSSetTableViewMeController.m */; };
+		534CA18B200C4B2A00A409A7 /* HSSetTableInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCC91EB18D1000CB0ADE /* HSSetTableInfoController.m */; };
+		534CA18C200C4B2A00A409A7 /* HSSetTableViewOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B07CCCC1EB18D3800CB0ADE /* HSSetTableViewOtherController.m */; };
+		534CA18D200C4B2A00A409A7 /* HSSetTableViewQQController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5778A1EC01AD1006E3814 /* HSSetTableViewQQController.m */; };
+		534CA18E200C4B2A00A409A7 /* HSSetTableViewCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B719B8C1ED3C5FD00DB0BE9 /* HSSetTableViewCustomController.m */; };
+		534CA18F200C4B2A00A409A7 /* HSZhiHuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF332A1EEADCFA00299CEB /* HSZhiHuTableViewController.m */; };
+		534CA190200C4B2A00A409A7 /* HSCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B571E8D1F25C3EC0092E1F4 /* HSCategoryViewController.m */; };
+		534CA191200C4B2A00A409A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4A51EAB991D004A9BA9 /* AppDelegate.m */; };
+		534CA192200C4B2A00A409A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4A81EAB991D004A9BA9 /* ViewController.m */; };
+		534CA193200C4B2A00A409A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3C4A21EAB991D004A9BA9 /* main.m */; };
 		FF6366172005D5BE003A2426 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FF6365FB2005D5BD003A2426 /* LICENSE */; };
-		FF6366182005D5BE003A2426 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6365FE2005D5BD003A2426 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		FF6366192005D5BE003A2426 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366072005D5BD003A2426 /* ViewController+MASAdditions.m */; };
-		FF63661A2005D5BE003A2426 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660B2005D5BD003A2426 /* MASCompositeConstraint.m */; };
-		FF63661B2005D5BE003A2426 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660C2005D5BD003A2426 /* MASConstraintMaker.m */; };
-		FF63661C2005D5BE003A2426 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660D2005D5BD003A2426 /* MASLayoutConstraint.m */; };
-		FF63661D2005D5BE003A2426 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660E2005D5BD003A2426 /* NSArray+MASAdditions.m */; };
-		FF63661E2005D5BE003A2426 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63660F2005D5BD003A2426 /* View+MASAdditions.m */; };
-		FF63661F2005D5BE003A2426 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366122005D5BD003A2426 /* MASConstraint.m */; };
-		FF6366202005D5BE003A2426 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366142005D5BD003A2426 /* MASViewConstraint.m */; };
-		FF6366212005D5BE003A2426 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6366152005D5BD003A2426 /* MASViewAttribute.m */; };
 		FF6366222005D5BE003A2426 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF6366162005D5BD003A2426 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -701,69 +702,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B07CCF51EB1A21300CB0ADE /* SDWebImageDecoder.m in Sources */,
-				3B07CCF11EB1A21300CB0ADE /* MKAnnotationView+WebCache.m in Sources */,
-				3B07CCC71EB18CE600CB0ADE /* HSSetTableViewMeController.m in Sources */,
-				3BFD66651EB1DD050001E324 /* HSBaseCellModel.m in Sources */,
-				3BFD66641EB1DD050001E324 /* HSSetTableViewControllerConst.m in Sources */,
-				3B07CCF41EB1A21300CB0ADE /* SDWebImageCompat.m in Sources */,
-				3B571EA11F25EFCF0092E1F4 /* UIViewController+HSSetTableView.m in Sources */,
-				3B07CCF31EB1A21300CB0ADE /* SDImageCache.m in Sources */,
-				FF63661E2005D5BE003A2426 /* View+MASAdditions.m in Sources */,
-				3BFD66661EB1DD050001E324 /* HSImageCellModel.m in Sources */,
-				3BFD665D1EB1DD050001E324 /* NSArray+HSSafeAccess.m in Sources */,
-				3B07CCFC1EB1A21300CB0ADE /* UIImage+MultiFormat.m in Sources */,
-				FF6366182005D5BE003A2426 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				3BFF33341EEAE39900299CEB /* HSZhiHuCustomTableViewCell.m in Sources */,
-				3BFD666B1EB1DD050001E324 /* HSSwitchTableViewCell.m in Sources */,
-				FF63661B2005D5BE003A2426 /* MASConstraintMaker.m in Sources */,
-				3B07CCFB1EB1A21300CB0ADE /* UIImage+GIF.m in Sources */,
-				3B07CCF61EB1A21300CB0ADE /* SDWebImageDownloader.m in Sources */,
-				FF6366192005D5BE003A2426 /* ViewController+MASAdditions.m in Sources */,
-				3B887ADF1FA038DF000D2646 /* HSHeaderModel.m in Sources */,
-				3B887AE21FA0396A000D2646 /* HSFooterModel.m in Sources */,
-				3BFD66671EB1DD050001E324 /* HSSwitchCellModel.m in Sources */,
-				3BFD666A1EB1DD050001E324 /* HSImageTableViewCell.m in Sources */,
-				3BFD665E1EB1DD050001E324 /* NSBundle+HSImage.m in Sources */,
-				3BFF33371EEAE3C200299CEB /* HSZhiHuCustomCellModel.m in Sources */,
-				3BFD665F1EB1DD050001E324 /* NSString+HSHeight.m in Sources */,
-				3BFF332B1EEADCFA00299CEB /* HSZhiHuTableViewController.m in Sources */,
-				3BFF331E1EEAB77200299CEB /* HSCustomCellModel.m in Sources */,
-				3B07CCFF1EB1A21300CB0ADE /* UIImageView+WebCache.m in Sources */,
-				3BFD66601EB1DD050001E324 /* UIColor+HSExtension.m in Sources */,
-				3B07CCFA1EB1A21300CB0ADE /* UIButton+WebCache.m in Sources */,
-				3BFD66611EB1DD050001E324 /* UIView+HSFrame.m in Sources */,
-				3BFD66691EB1DD050001E324 /* HSBaseTableViewCell.m in Sources */,
-				3B07CCCA1EB18D1000CB0ADE /* HSSetTableInfoController.m in Sources */,
-				3B719B8D1ED3C5FD00DB0BE9 /* HSSetTableViewCustomController.m in Sources */,
-				3BB3C4A91EAB991D004A9BA9 /* ViewController.m in Sources */,
-				3B571E9E1F25EFB50092E1F4 /* HSSetTableViewManager.m in Sources */,
-				FF63661D2005D5BE003A2426 /* NSArray+MASAdditions.m in Sources */,
-				3B571E8E1F25C3EC0092E1F4 /* HSCategoryViewController.m in Sources */,
-				3B07CCF71EB1A21300CB0ADE /* SDWebImageDownloaderOperation.m in Sources */,
-				3B07CCF91EB1A21300CB0ADE /* SDWebImagePrefetcher.m in Sources */,
-				3BFD66621EB1DD050001E324 /* HSSetTableViewMainController.m in Sources */,
-				FF63661C2005D5BE003A2426 /* MASLayoutConstraint.m in Sources */,
-				3BFF331B1EEAA24000299CEB /* HSTitleCellModel.m in Sources */,
-				3B07CCFD1EB1A21300CB0ADE /* UIImage+WebP.m in Sources */,
-				3BFF33281EEABD8E00299CEB /* HSHeaderTableViewCell.m in Sources */,
-				3B07CCF81EB1A21300CB0ADE /* SDWebImageManager.m in Sources */,
-				3B07CCF21EB1A21300CB0ADE /* NSData+ImageContentType.m in Sources */,
-				3BFD66681EB1DD050001E324 /* HSTextCellModel.m in Sources */,
-				3BF5778B1EC01AD1006E3814 /* HSSetTableViewQQController.m in Sources */,
-				FF6366212005D5BE003A2426 /* MASViewAttribute.m in Sources */,
-				3BFF33181EEA9F2A00299CEB /* HSTitleTableViewCell.m in Sources */,
-				3BFD666C1EB1DD050001E324 /* HSTextTableViewCell.m in Sources */,
-				3B07CCCD1EB18D3800CB0ADE /* HSSetTableViewOtherController.m in Sources */,
-				3BB3C4A61EAB991D004A9BA9 /* AppDelegate.m in Sources */,
-				3BFF33251EEABD5300299CEB /* HSHeaderCellModel.m in Sources */,
-				3BFF33211EEABB9C00299CEB /* HSCustomTableViewCell.m in Sources */,
-				FF63661A2005D5BE003A2426 /* MASCompositeConstraint.m in Sources */,
-				FF6366202005D5BE003A2426 /* MASViewConstraint.m in Sources */,
-				3B07CD001EB1A21300CB0ADE /* UIView+WebCacheOperation.m in Sources */,
-				3B07CCFE1EB1A21300CB0ADE /* UIImageView+HighlightedWebCache.m in Sources */,
-				3BB3C4A31EAB991D004A9BA9 /* main.m in Sources */,
-				FF63661F2005D5BE003A2426 /* MASConstraint.m in Sources */,
+				534CA154200C4B2A00A409A7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				534CA155200C4B2A00A409A7 /* ViewController+MASAdditions.m in Sources */,
+				534CA156200C4B2A00A409A7 /* MASCompositeConstraint.m in Sources */,
+				534CA157200C4B2A00A409A7 /* MASConstraintMaker.m in Sources */,
+				534CA158200C4B2A00A409A7 /* MASLayoutConstraint.m in Sources */,
+				534CA159200C4B2A00A409A7 /* NSArray+MASAdditions.m in Sources */,
+				534CA15A200C4B2A00A409A7 /* View+MASAdditions.m in Sources */,
+				534CA15B200C4B2A00A409A7 /* MASConstraint.m in Sources */,
+				534CA15C200C4B2A00A409A7 /* MASViewConstraint.m in Sources */,
+				534CA15D200C4B2A00A409A7 /* MASViewAttribute.m in Sources */,
+				534CA15E200C4B2A00A409A7 /* README.md in Sources */,
+				534CA15F200C4B2A00A409A7 /* HSSetTableViewManager.m in Sources */,
+				534CA160200C4B2A00A409A7 /* UIViewController+HSSetTableView.m in Sources */,
+				534CA161200C4B2A00A409A7 /* NSArray+HSSafeAccess.m in Sources */,
+				534CA162200C4B2A00A409A7 /* NSBundle+HSImage.m in Sources */,
+				534CA163200C4B2A00A409A7 /* NSString+HSHeight.m in Sources */,
+				534CA164200C4B2A00A409A7 /* UIColor+HSExtension.m in Sources */,
+				534CA165200C4B2A00A409A7 /* UIView+HSFrame.m in Sources */,
+				534CA166200C4B2A00A409A7 /* HSSetTableViewMainController.m in Sources */,
+				534CA167200C4B2A00A409A7 /* HSSetTableViewControllerConst.m in Sources */,
+				534CA168200C4B2A00A409A7 /* HSBaseCellModel.m in Sources */,
+				534CA169200C4B2A00A409A7 /* HSImageCellModel.m in Sources */,
+				534CA16A200C4B2A00A409A7 /* HSSwitchCellModel.m in Sources */,
+				534CA16B200C4B2A00A409A7 /* HSTextCellModel.m in Sources */,
+				534CA16C200C4B2A00A409A7 /* HSTitleCellModel.m in Sources */,
+				534CA16D200C4B2A00A409A7 /* HSCustomCellModel.m in Sources */,
+				534CA16E200C4B2A00A409A7 /* HSHeaderModel.m in Sources */,
+				534CA16F200C4B2A00A409A7 /* HSFooterModel.m in Sources */,
+				534CA170200C4B2A00A409A7 /* HSTitleTableViewCell.m in Sources */,
+				534CA171200C4B2A00A409A7 /* HSBaseTableViewCell.m in Sources */,
+				534CA172200C4B2A00A409A7 /* HSImageTableViewCell.m in Sources */,
+				534CA173200C4B2A00A409A7 /* HSSwitchTableViewCell.m in Sources */,
+				534CA174200C4B2A00A409A7 /* HSTextTableViewCell.m in Sources */,
+				534CA175200C4B2A00A409A7 /* HSCustomTableViewCell.m in Sources */,
+				534CA176200C4B2A00A409A7 /* MKAnnotationView+WebCache.m in Sources */,
+				534CA177200C4B2A00A409A7 /* NSData+ImageContentType.m in Sources */,
+				534CA178200C4B2A00A409A7 /* SDImageCache.m in Sources */,
+				534CA179200C4B2A00A409A7 /* SDWebImageCompat.m in Sources */,
+				534CA17A200C4B2A00A409A7 /* SDWebImageDecoder.m in Sources */,
+				534CA17B200C4B2A00A409A7 /* SDWebImageDownloader.m in Sources */,
+				534CA17C200C4B2A00A409A7 /* SDWebImageDownloaderOperation.m in Sources */,
+				534CA17D200C4B2A00A409A7 /* SDWebImageManager.m in Sources */,
+				534CA17E200C4B2A00A409A7 /* SDWebImagePrefetcher.m in Sources */,
+				534CA17F200C4B2A00A409A7 /* UIButton+WebCache.m in Sources */,
+				534CA180200C4B2A00A409A7 /* UIImage+GIF.m in Sources */,
+				534CA181200C4B2A00A409A7 /* UIImage+MultiFormat.m in Sources */,
+				534CA182200C4B2A00A409A7 /* UIImage+WebP.m in Sources */,
+				534CA183200C4B2A00A409A7 /* UIImageView+HighlightedWebCache.m in Sources */,
+				534CA184200C4B2A00A409A7 /* UIImageView+WebCache.m in Sources */,
+				534CA185200C4B2A00A409A7 /* UIView+WebCacheOperation.m in Sources */,
+				534CA186200C4B2A00A409A7 /* HSHeaderCellModel.m in Sources */,
+				534CA187200C4B2A00A409A7 /* HSHeaderTableViewCell.m in Sources */,
+				534CA188200C4B2A00A409A7 /* HSZhiHuCustomTableViewCell.m in Sources */,
+				534CA189200C4B2A00A409A7 /* HSZhiHuCustomCellModel.m in Sources */,
+				534CA18A200C4B2A00A409A7 /* HSSetTableViewMeController.m in Sources */,
+				534CA18B200C4B2A00A409A7 /* HSSetTableInfoController.m in Sources */,
+				534CA18C200C4B2A00A409A7 /* HSSetTableViewOtherController.m in Sources */,
+				534CA18D200C4B2A00A409A7 /* HSSetTableViewQQController.m in Sources */,
+				534CA18E200C4B2A00A409A7 /* HSSetTableViewCustomController.m in Sources */,
+				534CA18F200C4B2A00A409A7 /* HSZhiHuTableViewController.m in Sources */,
+				534CA190200C4B2A00A409A7 /* HSCategoryViewController.m in Sources */,
+				534CA191200C4B2A00A409A7 /* AppDelegate.m in Sources */,
+				534CA192200C4B2A00A409A7 /* ViewController.m in Sources */,
+				534CA193200C4B2A00A409A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

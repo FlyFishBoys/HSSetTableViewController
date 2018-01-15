@@ -9,7 +9,7 @@
 #import "HSSetTableInfoController.h"
 @interface HSSetTableInfoController ()
 @property (nonatomic, strong)HSImageCellModel *header;
-@end      
+@end
 
 @implementation HSSetTableInfoController
 

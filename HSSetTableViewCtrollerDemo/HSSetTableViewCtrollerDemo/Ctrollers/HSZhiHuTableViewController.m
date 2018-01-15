@@ -52,6 +52,7 @@
     HSTitleCellModel *record = [[HSTitleCellModel alloc] initWithTitle:@"推送消息设置" actionBlock:nil];
     //空间清理
     HSTitleCellModel *clean = [[HSTitleCellModel alloc] initWithTitle:@"账号与安全" actionBlock:nil];
+    clean.titleFont = [UIFont systemFontOfSize:16];
     //消息通知
     HSTitleCellModel *security = [[HSTitleCellModel alloc] initWithTitle:@"管理黑名单" actionBlock:nil];
     //聊天记录
@@ -74,11 +75,11 @@
     NSMutableArray *section4 = [NSMutableArray arrayWithObjects:about,nil];
     
 
-    [self.hs_dataArry addObject:section];
-    [self.hs_dataArry addObject:section1];
+//    [self.hs_dataArry addObject:section];
+//    [self.hs_dataArry addObject:section1];
     [self.hs_dataArry addObject:section2];
-    [self.hs_dataArry addObject:section3];
-    [self.hs_dataArry addObject:section4];
+//    [self.hs_dataArry addObject:section3];
+//    [self.hs_dataArry addObject:section4];
     [self.hs_tableView reloadData];
 }
 
