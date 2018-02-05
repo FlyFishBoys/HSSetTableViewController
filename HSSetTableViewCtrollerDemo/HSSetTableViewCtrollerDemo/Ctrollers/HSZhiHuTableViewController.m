@@ -39,10 +39,10 @@
     
     
     HSZhiHuCustomCellModel *titleFont = [[HSZhiHuCustomCellModel alloc] initWithCellIdentifier:@"HSZhiHuCustomTableViewCell" actionBlock:nil];
-    titleFont.cellHeight = 60;
     titleFont.text = @"字体大小";
     titleFont.detailText = @"除回答与专栏正文页面以外的字体调节";
     titleFont.hideSwitch = YES;
+    titleFont.titleFont = [UIFont systemFontOfSize:13];
     
     
     
@@ -74,13 +74,14 @@
     NSMutableArray *section3 = [NSMutableArray arrayWithObjects:security, privacy,help,nil];
     NSMutableArray *section4 = [NSMutableArray arrayWithObjects:about,nil];
     
-
-//    [self.hs_dataArry addObject:section];
-//    [self.hs_dataArry addObject:section1];
+     section = [NSMutableArray arrayWithObjects:titleFont,nil];
+    [self.hs_dataArry addObject:section];
+    [self.hs_dataArry addObject:section1];
     [self.hs_dataArry addObject:section2];
-//    [self.hs_dataArry addObject:section3];
-//    [self.hs_dataArry addObject:section4];
+    [self.hs_dataArry addObject:section3];
+    [self.hs_dataArry addObject:section4];
     [self.hs_tableView reloadData];
+    self.hs_tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 

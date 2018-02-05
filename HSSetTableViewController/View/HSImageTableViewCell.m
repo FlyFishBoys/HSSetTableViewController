@@ -11,6 +11,8 @@
 #import "UIView+HSFrame.h"
 #import "HSSetTableViewControllerConst.h"
 #import "UIImageView+WebCache.h"
+#import "Masonry.h"
+
 @interface HSImageTableViewCell()
 
 @property (nonatomic, weak)UIImageView *bigImageView;  ///<右边图片显示
@@ -47,7 +49,17 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickImage:)];
     [self.bigImageView addGestureRecognizer:tap];
     
-    [self setupBigImageConstraint];
+    //[self setupBigImageConstraint];
+    
+    [self.bigImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.right.equalTo(@-40);
+        make.centerY.equalTo(self.contentView);
+        make.width.equalTo(@(35*23/15));
+        make.height.equalTo(@(35*23/15));
+        make.top.equalTo(@5);
+    }];
+    
 }
 
 //设置大图约束

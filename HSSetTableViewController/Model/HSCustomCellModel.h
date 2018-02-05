@@ -7,11 +7,12 @@
 //
 
 #import "HSBaseCellModel.h"
+#import "HSTitleCellModel.h"
 
 /**
  自定义cell model基类
  */
-@interface HSCustomCellModel : HSBaseCellModel
+@interface HSCustomCellModel : HSTitleCellModel
 
 @property (nonatomic, copy  ) NSString   *text;///<基类开放的属性(可用可不用，也可以自己定义熟悉)
 @property (nonatomic, copy  ) NSString   *detailText;  ///<基类开放属性(可用可不用，也可以自己定义属性)

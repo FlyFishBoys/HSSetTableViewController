@@ -43,16 +43,17 @@
     UISwitch *switchItem = [[UISwitch alloc] initWithFrame:CGRectMake(HS_SCREEN_WIDTH- HS_KSwitchWidth - HS_KCellMargin, (60 - HS_KSwitchHeight)/2, HS_KSwitchWidth, HS_KSwitchHeight)];
     [switchItem addTarget:self action:@selector(switchChang:) forControlEvents:UIControlEventValueChanged];
     switchItem.onTintColor = [UIColor blueColor];
-    [self.contentView addSubview:switchItem];
+    [self addSubview:switchItem];
     self.mySwitch = switchItem;
-
+    
 //    [self.mySwitch mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@20);
-//        make.top.equalTo(@20);
-//        make.width.equalTo(@60);
-//        make.height.equalTo(@35);
-//        make.bottom.equalTo(@-90);
+//            make.left.equalTo(@20);
+//            make.top.equalTo(@20);
+//            make.width.equalTo(@60);
+//            make.height.equalTo(@35);
+//            make.bottom.equalTo(@-40);
 //    }];
+
 
     //箭头
     UIImageView *arrow = [[UIImageView alloc] initWithFrame:CGRectMake(HS_SCREEN_WIDTH -HS_KCellMargin - HS_KArrowWidth, (60 - HS_kArrowHeight)/2, HS_KArrowWidth, HS_kArrowHeight)];
@@ -60,12 +61,11 @@
     [self.contentView addSubview:arrow];
     self.arrow = arrow;
 
-    UIView * redView = [UIView new];
-    redView.backgroundColor = [UIColor redColor];
-    [self.contentView addSubview:redView];
-    redView.frame = CGRectMake(50, 70, 100, 90);
-    [self.contentView addSubview:redView];
-    
+//    UIView * redView = [UIView new];
+//    redView.backgroundColor = [UIColor redColor];
+//    redView.frame = CGRectMake(190, 20, 60, 40);
+//    [self.contentView addSubview:redView];
+//
     
 }
 
@@ -80,6 +80,11 @@
     self.mySwitch.hidden = cellModel.hideSwitch;
     self.textLabel.text = cellModel.text;
     self.detailTextLabel.text = cellModel.detailText;
+    self.textLabel.font = cellModel.titleFont;
+    self.detailTextLabel.font = [UIFont systemFontOfSize:19];
+    if (self.switchModel.hideSwitch==YES) {
+        [self.mySwitch removeConstraints:self.mySwitch.constraints];
+    }
 }
 
 - (void)switchChang:(UISwitch *)switchItem

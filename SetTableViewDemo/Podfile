@@ -1,0 +1,12 @@
+platform :ios,’8.0’
+target 'SetTableViewDemo’ do
+
+pod 'MJRefresh'
+pod 'ProgressHUD'
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'AFNetworking'
+pod 'AutoModelFile'
+pod 'UIView+hiddenLayout'
+
+end

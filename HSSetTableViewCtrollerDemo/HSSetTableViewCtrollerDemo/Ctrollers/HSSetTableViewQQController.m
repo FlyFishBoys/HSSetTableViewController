@@ -27,7 +27,7 @@
     head.imageSize = CGSizeMake(30.0f, 30.0f);
     head.cornerRadius = 15;
     head.cellHeight = HS_KCellHeight;
-    
+    head.titleFont = [UIFont systemFontOfSize:23 ];
    
     
     //手机号码
@@ -88,6 +88,9 @@
     NSMutableArray *section1 = [NSMutableArray arrayWithObjects:msg, record,clean,nil];
     NSMutableArray *section2 = [NSMutableArray arrayWithObjects:security, privacy,help,nil];
     NSMutableArray *section3 = [NSMutableArray arrayWithObjects:about,nil];
+    
+    section0 = [NSMutableArray arrayWithObjects:head, phone,superMan,nil];
+    
     [self.hs_dataArry addObject:section0];
     [self.hs_dataArry addObject:section1];
     [self.hs_dataArry addObject:section2];

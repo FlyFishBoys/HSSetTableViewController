@@ -110,27 +110,27 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSMutableArray *sections = [self.hs_dataArry hs_objectWithIndex:indexPath.section];
-    NSAssert([sections isKindOfClass:[NSMutableArray class]], @"此对象必须为一个可变数组,请检查数据源组装方式是否正确!");
-    HSBaseCellModel *cellModel = (HSBaseCellModel *)[sections hs_objectWithIndex:indexPath.row];
-
-    if (cellModel.cellHeight>0) {
-        Class class =  NSClassFromString(cellModel.cellClass);
-        //return [class getCellHeight:cellModel];
-        
-        HSBaseTableViewCell *cell = [class cellWithIdentifier:cellModel.cellClass tableView:tableView];
-        
-        [cell prepareForReuse];
-        
-        CGFloat height = [self systemFittingHeightForConfiguratedCell:cell withTalbView:tableView cellModel:cellModel];
-        
-        return height;
-    }
-    
-    return cellModel.cellHeight;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSMutableArray *sections = [self.hs_dataArry hs_objectWithIndex:indexPath.section];
+//    NSAssert([sections isKindOfClass:[NSMutableArray class]], @"此对象必须为一个可变数组,请检查数据源组装方式是否正确!");
+//    HSBaseCellModel *cellModel = (HSBaseCellModel *)[sections hs_objectWithIndex:indexPath.row];
+//
+//    if (cellModel.cellHeight>0) {
+//        Class class =  NSClassFromString(cellModel.cellClass);
+//        //return [class getCellHeight:cellModel];
+//
+//        HSBaseTableViewCell *cell = [class cellWithIdentifier:cellModel.cellClass tableView:tableView];
+//
+//        [cell prepareForReuse];
+//
+//        CGFloat height = [self systemFittingHeightForConfiguratedCell:cell withTalbView:tableView cellModel:cellModel];
+//
+//        return height;
+//    }
+//
+//    return cellModel.cellHeight;
+//}
 
 
 - (CGFloat)systemFittingHeightForConfiguratedCell:(UITableViewCell *)cell withTalbView:(UITableView*)tableView cellModel:(HSBaseCellModel*)cellModel {
@@ -197,10 +197,12 @@
         fittingHeight += 1.0 / [UIScreen mainScreen].scale;
     }
     
+    //扩展支持字体大小适应高度
     if (fittingHeight < titleCellModel.titleFont.pointSize +18*2) {
         
         fittingHeight = titleCellModel.titleFont.pointSize +18*2;
     }
+    
     
     return fittingHeight;
 }
