@@ -2,7 +2,7 @@
 //Student.h 
 //
 //
-//Create by AutoModelFileManager on 18/1/31 
+//Create by AutoModelFileManager on 18/2/26 
 //Copyright (c) 2018年 AutoModelFileManager. All rights reserved.
 //
 //此文件由有代码自动生成，不要手动修改

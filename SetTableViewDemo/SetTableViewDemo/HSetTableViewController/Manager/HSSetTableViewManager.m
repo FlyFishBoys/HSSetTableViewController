@@ -137,7 +137,21 @@
     HSSectionModel *sectionModel = (HSSectionModel*)[self.dataSource hs_objectWithIndex:section];
     HSHeaderModel *header = sectionModel.headerModel;
     header.headerView.backgroundColor = [UIColor lightGrayColor];
-    return [header.headerView.subviews[0] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
+    CGFloat top =0; CGFloat bottom=0;
+    for (NSLayoutConstraint * layout in header.headerView.constraints) {
+        
+        if (layout.firstAttribute==NSLayoutAttributeTop&&layout.secondAttribute==NSLayoutAttributeTop) {
+            top = -layout.constant;
+        }
+        
+        if (layout.firstAttribute==NSLayoutAttributeBottom&&layout.secondAttribute==NSLayoutAttributeBottom) {
+            bottom = -layout.constant;
+        }
+        
+    }
+    
+    return [header.headerView.subviews[0] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height+top+bottom;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -146,7 +160,20 @@
     HSFooterModel *footer = sectionModel.footerModel;
     footer.footerView.backgroundColor = [UIColor lightGrayColor];
     
-    return [footer.footerView.subviews[0] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    CGFloat top =0; CGFloat bottom=0;
+    for (NSLayoutConstraint * layout in footer.footerView.constraints) {
+        
+        if (layout.firstAttribute==NSLayoutAttributeTop&&layout.secondAttribute==NSLayoutAttributeTop) {
+            top = -layout.constant;
+        }
+        
+        if (layout.firstAttribute==NSLayoutAttributeBottom&&layout.secondAttribute==NSLayoutAttributeBottom) {
+            bottom = -layout.constant;
+        }
+        
+    }
+    
+    return [footer.footerView.subviews[0] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height+top+bottom;
 }
 
 
